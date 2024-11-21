@@ -1,0 +1,56 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+
+.header_outer_container{
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #141414; /* Netflix dark background */
+    color: white;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    height: 10vh;
+    color: white;
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+    z-index: 1;
+    /* background-color:  red; */
+
+}
+
+
+.header_container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.header_left ul{
+    
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+  
+    
+
+}
+.header_right ul{
+
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
