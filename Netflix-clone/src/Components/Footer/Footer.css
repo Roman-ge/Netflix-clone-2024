@@ -1,67 +1,124 @@
-/* Netflix Footer Styles */
-
-.footer_auter_container {
-    
-    background-color: #141414;
-    width: 100%;
-    color: #737373;
-    padding: 40px 20px;
-    font-size: 14px;
+.header_outer_container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  background-color: transparent;
+  height: 10vh;
+  color: white;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  z-index: 1;
+  /* background-color: red; */
+}
+.header_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_left {
+  width: 140%;
+  display: flex;
 }
 
-.footer_inner_container{
-    display: flex;
-    width: 80%;
-    gap: 15px;
-}
-.footer_icons {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 10px;
-    color: white;
+/* Inner container styling */
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 3%;
+  max-width: 1400px; /* Center content within a max-width */
+  margin: auto;
+  color: white;
 }
 
-.footer_data{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    justify-content: left;
+/* Header left (logo and navigation) */
+.header_left ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.footer_data ul{
-    list-style: none;
-    display: flex;
-    width: 100%;
+.header_left ul li {
+  color: #e5e5e5;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header_left ul li img {
+  margin-right: 20px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.header_left ul li:first-child {
+  font-weight: bold;
+  font-size: 1.3rem; /* Optional: make "Netflix" text larger */
+}
+
+/* Hover effect for left items */
+.header_left ul li:hover {
+  color: #b3b3b3;
+}
+
+/* Header right (icons) */
+.header_right ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header_right ul li {
+  font-size: 1.1rem;
+  margin-right: 20px;
+  color: #e5e5e5;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for right items */
+.header_right ul li:hover {
+  color: #b3b3b3;
+}
+
+.header_right ul li:last-child {
+  margin-right: 0; /* No extra space after the last item */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .header_container {
+    padding: 10px 5%; /* Increase padding on smaller screens */
+  }
+
+  .header_left ul li,
+  .header_right ul li {
+    font-size: 0.9rem;
+    margin-right: 15px;
+  }
+
+  .header_left ul li img {
+    width: 80px; /* Smaller logo for mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .header_container {
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    color: #737373;
-    padding: 10px 10px;
-    font-size: 14px;
-    height: 12vh;
+    align-items: flex-start;
+  }
+
+  .header_right ul {
+    margin-top: 10px; /* Separate right icons on small screens */
+  }
 }
-
-.footer_data ul li{
-    cursor: pointer;
-}
-.service_code {
-   
-    border:  white 1px solid;
-    
-    margin: 10px 0;
-    cursor: pointer;
-}
-.copy-wright{
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-    font-size: 12px;
-    list-style: none;
-    color: #555;
-}
-
-
-
-
