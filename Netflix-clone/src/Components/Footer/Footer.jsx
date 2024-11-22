@@ -1,59 +1,55 @@
-import React from "react";
-import "./Footer.css";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-
-const Footer = () => {
+import "./header.css";
+import NetflixLogo from "../../assets/Netflix.jpg";
+import SearchIcon from "@mui/icons-material/Search";
+import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+const Header = () => {
   return (
-    <div className="footer_auter_container">
-      <div className="footer_inner_container">
-        <FacebookIcon />
-        <InstagramIcon />
-        <YouTubeIcon />
-      </div>
-      <div className="footer_data">
-      <div>
+    <div className="header_outer_container">
+      <div className="header_container">
+        <div className="header_left">
           <ul>
-            <li>Audio Description</li>
-            <li>Investor Relations</li>
-            <li>Legal Notices</li>
+            <li>
+              <img src={NetflixLogo} alt="Netflix Logo " width="100" />
+            </li>
+            <li>Home</li>
+            <li>TvShows</li>
+            <li>Movies</li>
+            <li>Latest</li>
+            <li>MyList</li>
+            <li>Browse by Languges</li>
           </ul>
         </div>
-        <div>
+        <div className="header_right">
           <ul>
-            <li>Help Center</li>
-            <li>Jobs</li>
-            <li>Cookie Preferences</li>
+            <li>
+              <SearchIcon />
+            </li>
+            <li>
+              <NotificationsNoneIcon />
+            </li>
+            <li>
+              <AccountBoxIcon />
+            </li>
+            <li>
+              {" "}
+              <ArrowDropDownIcon />
+            </li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <li>Gift Cards</li>
-            <li>Terms of use</li>
-            <li>Corporate Information</li>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <li>Media Category</li>
-            <li>Privacy</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-      
-      </div>
-      <div className="Service_code">
-        <p>Service Code</p>
-      </div>
-      <div className="copy-wright">
-        <p>&copy; {new Date().getFullYear()} Netflix, Inc.</p>
       </div>
     </div>
-
-    
   );
 };
 
-export default Footer;
+export default Header;
+
+
+
+
+
+
+
+
+
